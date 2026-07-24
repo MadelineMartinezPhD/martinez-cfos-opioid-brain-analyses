@@ -3,7 +3,7 @@
 # Figures 2 and 3: regional activation results.
 #
 # Accompanies:
-#   Martinez M, Ozawa A, Van Zandt D, Thornberry J, Toll L.
+#   Martinez M, Ozawa A, Van Zant D, Thornberry J, Toll L.
 #   Whole Brain Cellular Activation After Mu and NOP Receptor Agonism
 #   Identified Differential Regional and Network Consequences.
 #   [JOURNAL] 2026. [PAPER_DOI]
