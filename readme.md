@@ -2,7 +2,7 @@
 
 Analysis code accompanying:
 
-> Martinez M, Ozawa A, Van Zandt D, Thornberry J, Toll L.
+> Martinez M, Ozawa A, Van Zant D, Thornberry J, Toll L.
 > *Whole Brain Cellular Activation After Mu and NOP Receptor Agonism
 > Identified Differential Regional and Network Consequences.*
 > [JOURNAL] 2026. [PAPER_DOI]
@@ -13,7 +13,7 @@ Toll Lab, Stiles-Nicholson Brain Institute, Charles E. Schmidt College of
 Medicine, Florida Atlantic University.
 
 Archived release: https://doi.org/10.5281/zenodo.21502549
-Processed data: [ZENODO_DATA_DOI]
+Processed data: https://doi.org/10.5281/zenodo.21522238
 
 ---
 
@@ -502,7 +502,7 @@ Per-animal NeuroInfo region tables exported as CSV. Expected columns include
 ## License
 
 Code in this repository is released under the MIT license; see `LICENSE`.
-Processed data deposited at [ZENODO_DATA_DOI] are released under CC-BY-4.0.
+Processed data deposited at https://doi.org/10.5281/zenodo.21522238 are released under CC-BY-4.0.
 
 ## Citation
 
