@@ -50,7 +50,7 @@ statistics and co-activation network analysis.
 │   ├── regional_analysis.R       # step 3: region-wise statistics
 │   ├── network_analysis.R        # step 4: co-activation networks
 │   ├── regional_figures.R        # step 5: Figures 2 and 3
-│   ├── coactivation_figures.R    # step 6: Figures 4 and S1
+│   ├── coactivation_figures.R    # step 6: Figures 4 and S2
 │   ├── cartography_figures.R     # step 7: Figure 5 panels A and B
 │   ├── network_graph_figures.R   # step 8: Figure 5 panel C
 │   └── divisions.R               # shared division palette (sourced, not run)
@@ -322,7 +322,7 @@ CCFv3 grouping, its colour palette, a 7-division coarse grouping used where a
 13-colour legend is not legible, and the `struct_of()` / `super_of()` helpers
 that map region acronyms onto each.
 
-### Step 6. Figures 4 and S1
+### Step 6. Figures 4 and S2
 
 ```bash
 Rscript scripts/coactivation_figures.R
@@ -337,7 +337,7 @@ Both figure sets are produced in a single run, each into its own folder:
 | Set | Contents | Output folder |
 |---|---|---|
 | Figure 4 | Combined per-condition heatmaps plus companion panels (mean \|r\| by condition, region involvement, within-division mean \|r\|), condition titles baked in | `results/figures/Figure4/` |
-| Figure S1 | Sex-stratified heatmaps (Males/Females per condition), condition-difference and sex-difference maps, as small titleless panels | `results/figures/FigureS1/` |
+| Figure S2 | Sex-stratified heatmaps (Males/Females per condition), condition-difference and sex-difference maps, as small titleless panels | `results/figures/FigureS2/` |
 
 To render only one set, drop the other from `RENDER_MODES` near the top of the
 file. Individual panels can be toggled with the `DO_*` flags below it.
