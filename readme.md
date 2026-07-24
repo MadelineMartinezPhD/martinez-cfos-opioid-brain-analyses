@@ -7,7 +7,7 @@ Analysis code accompanying:
 > Identified Differential Regional and Network Consequences.*
 > [JOURNAL] 2026. [PAPER_DOI]
 
-Repository: https://github.com/MadelineMartinezPhD/martinez-cfos-opioid-brain-analyses
+Repository: https://github.com/toll-lab-code/cfos-opioid-brain-analyses
 
 Toll Lab, Stiles-Nicholson Brain Institute, Charles E. Schmidt College of
 Medicine, Florida Atlantic University.
