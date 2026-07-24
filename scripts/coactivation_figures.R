@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 # coactivation_figures.R
 # =============================================================================
-# Figures 4 and S1: co-activation correlation heatmaps and companion panels.
+# Figures 4 and S2: co-activation correlation heatmaps and companion panels.
 #
 # Accompanies:
 #   Martinez M, Ozawa A, Van Zant D, Thornberry J, Toll L.
@@ -72,12 +72,12 @@ FIG_DIRNAME  <- "Figure4"
 #   "Figure4"  - Combined per-condition heatmaps plus the companion panels
 #                (mean |r| by condition, region involvement, within-division
 #                mean |r|), with condition titles baked into the panels.
-#   "FigureS1" - the sex-stratified set (Males/Females per condition, condition
+#   "FigureS2" - the sex-stratified set (Males/Females per condition, condition
 #                differences, sex differences) as small, titleless panels; row
 #                and column labels are added at assembly rather than here.
 # To render only one set, drop the other from RENDER_MODES. The size and panel
 # overrides for each mode are applied by apply_mode() below.
-RENDER_MODES <- c("Figure4", "FigureS1")
+RENDER_MODES <- c("Figure4", "FigureS2")
 SUPP_MAT_MM  <- 30   # matrix side for the small supplement heatmaps
 
 # Shared division scheme (13-division palette, abbreviations, region lookup) -
@@ -124,7 +124,7 @@ GAP_MM   <- 0.5     # gap between matrix and bar
 BAKE_TITLES <- TRUE # condition name baked above each heatmap
 TITLE_MM <- 6.0     # title strip height
 
-# Apply Supplemental S1 overrides now that base sizes are defined
+# Apply Supplemental S2 overrides now that base sizes are defined
 DPI      <- 1200    # line-art + raster; 1200 dpi for publication
 MASK_DIAGONAL  <- FALSE   # TRUE -> blank the self-correlation diagonal
 DRAW_BOUNDARIES<- FALSE   # TRUE -> thin black lines between divisions
@@ -164,9 +164,9 @@ MAIN_DO <- list(HEATMAPS = DO_HEATMAPS, DIFF = DO_DIFF, SEXDIFF = DO_SEXDIFF,
 # Configure the globals for one figure set. Called once per mode by the render
 # loop at the end of the script. Supplement panels are small and titleless, and
 # the Figure 4 companion panels (mean |r|, involvement, within-division) are
-# skipped there because they are not part of S1.
+# skipped there because they are not part of S2.
 apply_mode <- function(mode) {
-  supplement  <- identical(mode, "FigureS1")
+  supplement  <- identical(mode, "FigureS2")
   FIG_DIRNAME <<- mode
   MAT_MM      <<- if (supplement) SUPP_MAT_MM else MAIN_MAT_MM
   BAKE_TITLES <<- if (supplement) FALSE       else MAIN_BAKE_TITLES
