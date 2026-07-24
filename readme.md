@@ -511,4 +511,5 @@ https://doi.org/10.5281/zenodo.21502549.
 
 ## Use of AI assistance
 
-[AI_USE_STATEMENT]
+Generative AI (Claude, Anthropic; model Opus 4.8) was used during manuscript preparation and in preparing the analysis code for public deposit. Specifically, it was used to: (i) correct, update, and debug analysis code written by the authors, and to write utility scripts used to assemble the supplemental tables; (ii) consistency-check manuscript and supplemental text, including terminology standardization and cross-checking reported numerical values against the source data workbooks; and (iii) prepare the deposited R and Python code for public release, including removing machine-specific file paths, generalizing input handling, standardizing comments and headers, and drafting repository documentation. The study design, the analytical approach, the execution of all statistical and network analyses, and the interpretation of results were determined and carried out by the authors. No generative AI image tools were used to create figure content; all figure content was rendered directly from the study data by R and Python scripts. All AI-assisted outputs were reviewed, verified, and where necessary corrected by the authors, who take full responsibility for the accuracy and integrity of the work.
+
