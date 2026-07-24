@@ -736,8 +736,9 @@ permutation_metric_diff <- function(rm_A, rm_B, label_A, label_B, n_perm = 1000,
 # NETWORK'S DEGREE SEQUENCE. The null is a configuration-model ensemble: the
 # observed density-matched graph is randomly rewired preserving each node's
 # degree (Maslov-Sneppen edge swaps; Rubinov & Sporns 2010), which is the
-# standard modularity-significance null and is consistent with the small-world
-# calculation. This replaces the earlier animal-label-shuffle null, which
+# standard modularity-significance null. Note that this differs from the null
+# used for the small-world index above, which uses each-edge rewiring and does
+# not preserve degree. This replaces the earlier animal-label-shuffle null, which
 # compared against near-random graphs whose Louvain modularity is inflated and
 # produced uninterpretable results. Single-run Louvain is used for observed and
 # every null (same procedure); the role partition separately uses consensus
@@ -1113,7 +1114,7 @@ readme_sheet(wb2,
                "Global metrics recomputed across densities (2-20%), each condition at matched density: degree, strength, weighted clustering, global efficiency, modularity Q (Garrison 2015; Hallquist & Hillary 2019).",
                "Normalized area under the density-metric curve (= mean metric over the swept range): one threshold-independent value per metric per condition.",
                "Observed weighted modularity vs a DEGREE-PRESERVING (configuration-model) null: the graph is rewired keeping each node's degree (Maslov-Sneppen swaps; Rubinov & Sporns 2010), the standard modularity-significance null. Reports observed Q, null mean/SD, a modularity z-score, and p. Single-run Louvain for observed and all nulls.",
-               "Small-world index (C_obs/C_rand)/(L_obs/L_rand) using 100 degree-preserving rewired nulls (Rubinov & Sporns 2010); >1 = small-world.",
+               "Small-world index (C_obs/C_rand)/(L_obs/L_rand) using 100 randomly rewired nulls (igraph each_edge rewiring, which does NOT preserve the degree sequence; Humphries & Gurney 2008); >1 = small-world. Note this differs from the degree-preserving null used for modularity significance.",
                "PRIMARY inferential layer (Combined networks). Bootstrap CIs: animals resampled with replacement, network rebuilt at matched density, metric recomputed (n_boot iterations). Gives metric +/- 95% CI per condition (Vetere 2017; Kimbrough 2020).",
                "Label-permutation tests of between-condition metric differences (Combined): animals pooled, condition labels shuffled, difference recomputed under the null; two-sided p. THIS is the test of whether a network metric changes significantly between conditions.",
                "Diff_observed = metric(A) - metric(B); p_perm = permutation p-value; Metric_family splits Mean_strength (Strength channel, which re-expresses coactivation strength at matched density) from the graph-topology metrics (weighted transitivity, global efficiency, modularity Q). p_adj_BH = BH-FDR applied WITHIN each family, mirroring the lineage's separation of correlation strength (mean R) from graph topology (Kimbrough 2020; Bloch 2024)."))
