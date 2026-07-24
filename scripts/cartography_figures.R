@@ -16,7 +16,7 @@
 # Affiliation:  Toll Lab, Stiles-Nicholson Brain Institute,
 #               Charles E. Schmidt College of Medicine,
 #               Florida Atlantic University
-# Repository:   https://github.com/MadelineMartinezPhD/martinez-cfos-opioid-brain-analyses
+# Repository:   https://github.com/toll-lab-code/cfos-opioid-brain-analyses
 # Archived:     https://doi.org/10.5281/zenodo.21502549
 # License:      MIT (see LICENSE)
 # Tested with:  R 4.4.3 (see sessionInfo.txt)
